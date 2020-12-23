@@ -1,0 +1,30 @@
+# # Memo Lines starting with `#` are comments.
+# file.ext # Ignore files called 'file.ext'
+# bin/ # Ignoring directories
+# bin/ # Both the directory itself and its contents will be ignored.
+# bin # Without the trailing slash, the rule will match a file and/or
+# bin # a directory, so the following would ignore both a file named `gen`
+# bin # and a directory named `gen`, as well as any contents of that directory
+# *.apk # Ignoring files by extension
+# *.apk # All files with these extensions will be ignored in
+# *.apk # this directory and all its sub-directories.
+# java/*.apk # It's possible to combine both forms to ignore files with certain
+# java/*.apk # extensions in certain directories. The following rules would be
+# java/*.apk # redundant with generic rules defined above.
+# /*.apk # To ignore files only at the top level directory, but not in its
+# /*.apk # subdirectories, prefix the rule with a `/`
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/
+
+# VS Code Files
+#-------------------------
+*.code-workspace
+
+#OS & env files
+#-------------------------
+env.php
+*.env
+.DS_Store
